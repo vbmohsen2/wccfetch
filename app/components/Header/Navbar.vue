@@ -1,12 +1,14 @@
 <template>
-  <div class="relative">
+  <div class="relative  ">
     <transition name="slide-fade">
-      <div v-if="showNavbar" class=" w-full flex justify-center absolute py-2 my-2 gap-4 mx-auto overflow-auto">
+      <div v-if="showNavbar"   class="w-full flex justify-center border-none absolute py-2  gap-4 mx-auto overflow-auto
+               bg-white dark:bg-neutral-900 "
+                     >
 
         <span
             v-for="cat in categories.slice(0, 8)"
             :key="cat.id"
-            class="cursor-pointer hover:bg-gray-500 p-2 rounded-2xl text-nowrap transition"
+            class="cursor-pointer font-light hover:bg-gray-500  p-2 rounded-2xl text-nowrap "
         >
           {{ cat.name }}
         </span>
@@ -14,30 +16,35 @@
     </transition>
 
     <div
-        class="w-full absolute flex justify-center bg-inherit py-2  gap-3 overflow-auto transition-all duration-300 ease-in-out"
-        :class="{ 'top-0': !showNavbar, 'top-16': showNavbar }"
+        class="w-full  absolute flex justify-center border-none gap-3
+        bg-white dark:bg-neutral-900/90
+        overflow-auto  transition-all duration-300 ease-in-out"
+        :class="{ 'top-0': !showNavbar, 'top-10': showNavbar }"
     >
-           <span class=""><svg xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24" height="24"
-                      role="img" aria-label="Hot tag">
-  <title>Hot</title>
-  <defs>
-    <linearGradient id="flameTag" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#ff5722"/>
-      <stop offset="100%" stop-color="#ffc107"/>
-    </linearGradient>
-  </defs>
-  <path
-      d="M12 2C10 6 6 8 6 13c0 4 3 7 6 9 3-2 6-5 6-9 0-5-4-7-6-11z"
-      fill="url(#flameTag)"
-  />
-</svg>
+           <span class="pt-4"><svg xmlns="http://www.w3.org/2000/svg"
+       shape-rendering="geometricPrecision"
+       text-rendering="geometricPrecision"
+       image-rendering="optimizeQuality"
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       viewBox="0 0 384 511.4"
+       width="24" height="24">
+    <defs>
+      <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="163.52" y1="286.47" x2="163.52" y2="500.71">
+        <stop offset="0" stop-color="#FB6404"/>
+        <stop offset="1" stop-color="#F2BE10"/>
+      </linearGradient>
+    </defs>
+    <path fill="#E20919"
+          d="M77.46 228.43C65.33 119.85 128.78 43.48 247.72 0c-72.85 94.5 62.09 196.88 69.53 295.03 17.44-29.75 27.34-69.48 29.3-122.55 89.18 139.92 15.25 368.59-181.02 335.73-18.02-3.01-35.38-8.7-51.21-17.17C42.76 452.8 0 369.53 0 290c0-50.69 21.68-95.95 49.74-131.91 3.75 35.23 11.73 61.51 27.72 70.34z"/>
+    <path fill="url(#a)"
+          d="M139.16 372.49c-21.83-57.66-18.81-150.75 42.33-183.41.43 107.03 103.57 120.64 84.44 234.9 17.64-20.39 26.51-53.02 28.1-78.75 27.96 65.38 6.04 117.72-33.81 144.37-121.15 81-225.48-83.23-156.11-173.26 2.08 20.07 26.14 51.12 35.05 56.15z"/>
+  </svg>
 </span>
       <span
           v-for="cat in trendingCategories"
           :key="cat.id"
-          class="cursor-pointer border border-b-gray-700 hover:bg-gray-600 p-2 my-2 rounded-2xl text-nowrap transition"
+          class="  font-light cursor-pointer border border-black dark:border-gray-600 hover:bg-gray-600 p-2 my-2 rounded-2xl text-nowrap transition"
       >
         {{ cat.name }}
       </span>

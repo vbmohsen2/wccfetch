@@ -1,5 +1,5 @@
 <template>
-  <header class="  w-full fixed top-0 left-0  box-border mx-auto  z-50
+  <header class=" font-serif w-full fixed top-0 left-0  box-border mx-auto  z-50
                bg-white/60 dark:bg-gray-900/50
                backdrop-blur-sm shadow-sm dark:text-white">
     <div class="flex flex-col lg:max-w-screen-lg   mx-auto p-2">
@@ -113,14 +113,15 @@
 
 
     </div>
+    
   <div>
 
 <!--  <header-trending></header-trending>-->
 
   </div>
-      <header-navbar></header-navbar>
+     
     </div>
-
+ <header-navbar></header-navbar>
   </header>
 </template>
 
