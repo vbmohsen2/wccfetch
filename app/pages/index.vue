@@ -12,7 +12,7 @@ const myPost = {
 <template>
 <div class="max-w-screen-xl mx-auto container ">
    
-    <section class=" grid grid-cols-2 gap-16  my-9 mx-4 overflow-hidden">
+    <section class=" grid md:grid-cols-2 sm:grid-cols-1 md:gap-8  my-9 mx-4 overflow-hidden">
         <post-prominent :post="myPost">
                 
         </post-prominent>

@@ -8,7 +8,7 @@
         <span
             v-for="cat in categories.slice(0, 8)"
             :key="cat.id"
-            class="cursor-pointer font-light hover:bg-gray-500  p-2 rounded-2xl text-nowrap "
+            class="cursor-pointer font-light hover:bg-slate-300   p-2 rounded-2xl text-nowrap "
         >
           {{ cat.name }}
         </span>
@@ -19,7 +19,7 @@
         class="w-full  absolute flex justify-center border-none gap-3
         bg-white dark:bg-neutral-900/90
         overflow-auto  transition-all duration-300 ease-in-out"
-        :class="{ 'top-0': !showNavbar, 'top-10': showNavbar }"
+        :class="{ 'top-0': !showNavbar, 'top-14': showNavbar }"
     >
            <span class="pt-4"><svg xmlns="http://www.w3.org/2000/svg"
        shape-rendering="geometricPrecision"
@@ -44,7 +44,7 @@
       <span
           v-for="cat in trendingCategories"
           :key="cat.id"
-          class="  font-light cursor-pointer border border-black dark:border-gray-600 hover:bg-gray-600 p-2 my-2 rounded-2xl text-nowrap transition"
+          class="  font-light cursor-pointer border border-black dark:border-gray-600 hover:bg-slate-300 p-2 my-2 rounded-2xl text-nowrap transition"
       >
         {{ cat.name }}
       </span>

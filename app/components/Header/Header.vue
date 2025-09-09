@@ -3,7 +3,7 @@
                bg-white/60 dark:bg-gray-900/50
                backdrop-blur-sm shadow-sm dark:text-white">
     <div class="flex flex-col lg:max-w-screen-lg   mx-auto p-2">
-    <div class="flex justify-between py-2 ">
+    <div class="flex justify-between  ">
 
 <!--    hambergermenu-->
       <div class="flex   w-fit flex-nowrap">
