@@ -18,39 +18,19 @@ const myPost = {
         </post-prominent>
          <post-prominent :post="myPost">
                 
-        </post-prominent>
-          <post-prominent :post="myPost">
-                
-        </post-prominent>
-          <post-prominent :post="myPost">
-                
-        </post-prominent>
-          <post-prominent :post="myPost">
-                
-        </post-prominent>
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
+        </post-prominent >
+       <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
+      <post :post="myPost"/>
 
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
 
-        <post-prominent :post="myPost">
-                
-        </post-prominent>
+
         
     </section>
 </div>

@@ -6,13 +6,8 @@
     <div class="flex justify-between  ">
 
 <!--    hambergermenu-->
-      <div class="flex   w-fit flex-nowrap">
-      <div class="py-4 px-3 mx-1 rounded-md  hover:bg-gray-500">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" role="img" aria-label="menu">
-          <line x1="4" y1="8" x2="20" y2="8" />
-          <line x1="18" y1="16" x2="8" y2="16" />
-        </svg>
-      </div>
+      <div class="flex  w-fit flex-nowrap">
+    <header-hamberger-menu/>
 <!--        {{colorModeTemp}}-->
       <!--  darkmode-->
       <div  @click="toggleDarkMode" class="py-4 px-3 rounded-xl  hover:bg-gray-500">
